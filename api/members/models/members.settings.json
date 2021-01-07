@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "members",
+  "info": {
+    "name": "Members"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "FullName": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Phone": {
+      "type": "biginteger"
+    },
+    "Address": {
+      "type": "text"
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Gym",
+        "Dance",
+        "Taekwondo",
+        "Skating"
+      ]
+    }
+  }
+}
