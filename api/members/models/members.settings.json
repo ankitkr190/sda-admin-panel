@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "members",
   "info": {
-    "name": "Members"
+    "name": "Members",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,7 +11,7 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "FullName": {
+    "Name": {
       "type": "string"
     },
     "Email": {
@@ -30,6 +31,29 @@
         "Taekwondo",
         "Skating"
       ]
+    },
+    "Gender": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female",
+        "Others"
+      ]
+    },
+    "Aadhaar": {
+      "type": "biginteger"
+    },
+    "RegistrationId": {
+      "type": "string"
+    },
+    "DOB": {
+      "type": "date"
+    },
+    "FathersName": {
+      "type": "string"
+    },
+    "Membership": {
+      "type": "string"
     }
   }
 }
