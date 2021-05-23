@@ -1,0 +1,56 @@
+.header {
+  font-size: 40px;
+  color: #007bff;
+  text-align: center;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+.column a {
+  text-decoration: none;
+}
+
+.sms-portal {
+  margin: 0 -5px;
+  margin-top: 10vh;
+}
+
+/* Clear floats after the columns */
+.sms-portal:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 20px;
+  text-align: center;
+  /* background-color: rgb(45, 221, 206); */
+  background-color: #fff;
+  text-decoration: none;
+  color: #000;
+  border-radius: 1rem;
+  font-size: larger;
+}
+.card a {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 8px;
+  text-align: center;
+  background-color: rgb(45, 221, 206);
+  text-decoration: none;
+  color: #000;
+  border-radius: 0.5rem;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
