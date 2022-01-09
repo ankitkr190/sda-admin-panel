@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "members",
   "info": {
-    "name": "Members",
-    "description": ""
+    "name": "Members"
   },
   "options": {
     "increments": true,
@@ -21,16 +20,28 @@
       "type": "biginteger"
     },
     "Address": {
-      "type": "text"
+      "type": "richtext"
     },
-    "Category": {
-      "type": "enumeration",
-      "enum": [
-        "Gym",
-        "Dance",
-        "Taekwondo",
-        "Skating"
-      ]
+    "DOB": {
+      "type": "date"
+    },
+    "Photo": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "AadharNo": {
+      "type": "biginteger"
+    },
+    "FathersName": {
+      "type": "string"
     },
     "Gender": {
       "type": "enumeration",
@@ -40,20 +51,20 @@
         "Others"
       ]
     },
-    "Aadhaar": {
-      "type": "biginteger"
-    },
-    "RegistrationId": {
-      "type": "string"
-    },
-    "DOB": {
-      "type": "date"
-    },
-    "FathersName": {
-      "type": "string"
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Gym",
+        "Taekwondo",
+        "Skating",
+        "Dance"
+      ]
     },
     "Membership": {
       "type": "string"
+    },
+    "RegistrationNo": {
+      "type": "integer"
     }
   }
 }
