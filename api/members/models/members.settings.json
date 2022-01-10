@@ -13,17 +13,23 @@
     "Name": {
       "type": "string"
     },
+    "FathersName": {
+      "type": "string"
+    },
     "Email": {
       "type": "email"
     },
-    "Phone": {
-      "type": "biginteger"
+    "PhoneNo": {
+      "type": "integer"
     },
-    "Address": {
-      "type": "richtext"
+    "AadharNo": {
+      "type": "biginteger"
     },
     "DOB": {
       "type": "date"
+    },
+    "Address": {
+      "type": "string"
     },
     "Photo": {
       "collection": "file",
@@ -37,10 +43,7 @@
       "required": false,
       "pluginOptions": {}
     },
-    "AadharNo": {
-      "type": "biginteger"
-    },
-    "FathersName": {
+    "RegistrationID": {
       "type": "string"
     },
     "Gender": {
@@ -55,16 +58,19 @@
       "type": "enumeration",
       "enum": [
         "Gym",
+        "Dance",
         "Taekwondo",
-        "Skating",
-        "Dance"
+        "Skating"
       ]
     },
     "Membership": {
       "type": "string"
     },
-    "RegistrationNo": {
-      "type": "integer"
+    "Note": {
+      "type": "richtext"
+    },
+    "Active": {
+      "type": "boolean"
     }
   }
 }
